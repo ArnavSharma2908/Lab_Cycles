@@ -1,90 +1,83 @@
-#First Fit
+#Write a program to implement FIFO page replacement algorithm
 
-Implement memory allocation methods for fixed-partition using First Fit
+AIM:
 
 ALGORITHM:
-Step 1: Start the program.
-Step 2: Declare structures for processes and blocks, and arrays to hold them.
-Step 3: Input the number of memory blocks and their sizes from the user.
-Step 4: Input the number of processes and their sizes from the user.
-Step 5: For each process, check each block to find the first suitable block that fits the process size and is not yet allocated.
-Step 6: If a suitable block is found, allocate it to the process and mark both the block and process as allocated.
-Step 7: If no suitable block is found for a process, print a message indicating that the process must wait.
-Step 8: End the program.
+Step 1: Initialize the queue and page position counter.
+Step 2: Check if the new page is in memory.
+Step 3: If present, it's a hit; if not, proceed to step 4.
+Step 4: If memory is full, remove the oldest page and replace it with the new page.
+Step 5: Add the new page to the end of the queue.
+Step 6: Update page references and counters.
+Step 7: Repeat for all page requests.
 
 PROGRAM:
+
 #include <stdio.h>
-#define MAX_BLOCKS 50
-#define MAX_PROCESSES 50
 
-// Structure for process
-struct process {
-    int size;   // Process size
-    int allocated; // Flag to check if process is allocated
-};
-
-// Structure for memory block
-struct block {
-    int size;   // Block size
-    int allocated; // Flag to check if block is allocated
-};
+#define MAX_PAGES 50
+#define MAX_FRAMES 10
 
 int main() {
-    struct process processes[MAX_PROCESSES];
-    struct block blocks[MAX_BLOCKS];
-
-    int numBlocks, numProcesses;
-    int i, j;
-
-    // Input number of blocks
-    printf("First Fit Memory Allocation\n");
-
-printf("Enter the number of blocks: ");
-    scanf("%d", &numBlocks);
-
-    // Input sizes of blocks
-    printf("Enter the size for %d blocks:\n", numBlocks);
-    for (i = 0; i < numBlocks; i++) {
-        printf("Block %d size: ", i);
-        scanf("%d", &blocks[i].size);
-        blocks[i].allocated = 0; // Initialize block as not allocated
-    }
-
-    // Input number of processes
-    printf("Enter the number of processes: ");
-    scanf("%d", &numProcesses);
-
-    // Input sizes of processes
-    printf("Enter the size for %d processes:\n", numProcesses);
-    for (i = 0; i < numProcesses; i++) {
-        printf("Process %d size: ", i);
-        scanf("%d", &processes[i].size);
-        processes[i].allocated = 0; // Initialize process as not allocated
-    }
-
-    // First Fit Allocation
-    printf("\nAllocation of blocks using First Fit is as follows:\n");
-    printf("Process\tProcess Size\tBlock Size\n");
+    int pages[MAX_PAGES], frames[MAX_FRAMES];
+    int num_pages, num_frames;
+    int i, j, k;
+    int page_faults = 0;
+    int is_page_in_memory;
     
-    for (i = 0; i < numProcesses; i++) {
-        for (j = 0; j < numBlocks; j++) {
-            if (!blocks[j].allocated && processes[i].size <= blocks[j].size) {
-                // Allocate block to process
-                blocks[j].allocated = 1;
-                processes[i].allocated = 1;
-                printf("%d\t%d\t\t%d\n", i, processes[i].size, blocks[j].size);
-                break; // Move to the next process
+    // Input number of pages
+    printf("Enter the number of pages: ");
+    scanf("%d", &num_pages);
+
+    // Input page numbers
+    printf("Enter the page numbers:\n");
+    for (i = 0; i < num_pages; i++) {
+        scanf("%d", &pages[i]);
+    }
+
+    // Input number of frames
+    printf("Enter the number of frames: ");
+    scanf("%d", &num_frames);
+
+    // Initialize frame array to -1 (indicating empty)
+for (i = 0; i < num_frames; i++) {
+        frames[i] = -1;
+    }
+
+    // Print the header for the output
+    printf("Ref String\tPage Frames\n");
+
+    // Process each page
+    for (i = 0; i < num_pages; i++) {
+        printf("%d\t\t", pages[i]);
+        is_page_in_memory = 0;
+
+        // Check if the page is already in one of the frames
+        for (k = 0; k < num_frames; k++) {
+            if (frames[k] == pages[i]) {
+                is_page_in_memory = 1;
+                break;
             }
         }
 
-        // If process was not allocated
-        if (!processes[i].allocated) {
-         printf("Process %d must wait as there is no sufficient memory\n", i);
+        // If page is not in memory, replace the oldest page
+        if (!is_page_in_memory) {
+            frames[j] = pages[i];
+            j = (j + 1) % num_frames;
+            page_faults++;
         }
+
+        // Print the current state of the frames
+        for (k = 0; k < num_frames; k++) {
+            printf("%d\t", frames[k]);
+        }
+        printf("\n");
     }
+
+    // Output the total number of page faults
+    printf("Total page faults: %d\n", page_faults);
 
     return 0;
 }
-
 
 
