@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FSD</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>FSD_1765861290</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -32,7 +32,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
-.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -7517,7 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="MC-Lab-Programs-(ALP)">MC Lab Programs (ALP)<a class="anchor-link" href="#MC-Lab-Programs-(ALP)">¶</a></h1>
+<h1 id="FSD-Lab-Programs">FSD Lab Programs<a class="anchor-link" href="#FSD-Lab-Programs">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7553,8 +7552,8 @@ a.anchor-link {
 
 <span class="o">&lt;</span><span class="n">form</span><span class="o">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"name"</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"name"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"name"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
 
 <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Email</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"email"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
@@ -7562,26 +7561,29 @@ a.anchor-link {
 <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Age</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"number"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Country</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">select</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="n">India</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="n">USA</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="n">UK</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"country"</span><span class="o">&gt;</span><span class="n">Country</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">select</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"country"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"country"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">option</span> <span class="n">value</span><span class="o">=</span><span class="s2">"india"</span><span class="o">&gt;</span><span class="n">India</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">option</span> <span class="n">value</span><span class="o">=</span><span class="s2">"usa"</span><span class="o">&gt;</span><span class="n">USA</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">option</span> <span class="n">value</span><span class="o">=</span><span class="s2">"uk"</span><span class="o">&gt;</span><span class="n">UK</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
 <span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
 
 <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Password</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"password"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
 
 <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Resume</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"file"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"file"</span> <span class="n">accept</span><span class="o">=</span><span class="s2">".pdf,.doc,.docx"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Hobbies</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox"</span><span class="o">&gt;</span> <span class="n">Cricket</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox"</span><span class="o">&gt;</span> <span class="n">Football</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"hobbies"</span><span class="o">&gt;</span><span class="n">Hobbies</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"cricket"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"hobbies"</span> <span class="n">value</span><span class="o">=</span><span class="s2">"cricket"</span><span class="o">&gt;</span> <span class="n">Cricket</span>
+
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"football"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"hobbies"</span> <span class="n">value</span><span class="o">=</span><span class="s2">"football"</span><span class="o">&gt;</span> <span class="n">Football</span>
+
 
 <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Gender</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"g"</span><span class="o">&gt;</span> <span class="n">Male</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"g"</span><span class="o">&gt;</span> <span class="n">Female</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"g"</span> <span class="n">value</span><span class="o">=</span><span class="s2">"m"</span><span class="o">&gt;</span> <span class="n">Male</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s2">"g"</span> <span class="n">value</span><span class="o">=</span><span class="s2">"f"</span><span class="o">&gt;</span> <span class="n">Female</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
 
 <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">City</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="n">select</span><span class="o">&gt;</span>
@@ -7904,7 +7906,7 @@ b. Center-align all the text within the table.</li>
 
 <span class="o">//</span> <span class="n">Display</span> <span class="n">results</span>
 <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"list"</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span>
-  <span class="n">toppers</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">s</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="err">$</span><span class="p">{</span><span class="n">s</span><span class="o">.</span><span class="n">name</span><span class="p">}</span> <span class="o">-</span> <span class="n">CGPA</span><span class="p">:</span> <span class="err">$</span><span class="p">{</span><span class="n">s</span><span class="o">.</span><span class="n">cgpa</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span><span class="err">`</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+  <span class="n">toppers</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">s</span> <span class="o">=&gt;</span> <span class="s2">"&lt;li&gt;"</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">" - CGPA: "</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="n">cgpa</span> <span class="o">+</span> <span class="s2">"&lt;/li&gt;"</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
 
 <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"count"</span><span class="p">)</span><span class="o">.</span><span class="n">innerText</span> <span class="o">=</span>
   <span class="s2">"Total students with CGPA ≥ 9: "</span> <span class="o">+</span> <span class="n">total</span><span class="p">;</span>
@@ -7982,7 +7984,7 @@ e) Select the first element with a specific class and change its text.</p>
   <span class="n">p</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">fontSize</span> <span class="o">=</span> <span class="s2">"20px"</span><span class="p">;</span>
 <span class="p">});</span>
 
-<span class="o">/*</span> <span class="n">e</span><span class="p">)</span> <span class="n">Change</span> <span class="n">first</span> <span class="n">element</span> <span class="k">with</span> <span class="n">specific</span> <span class="k">class</span><span class="w"> </span><span class="err">*/</span>
+<span class="o">/*</span> <span class="n">e</span><span class="p">)</span> <span class="n">Change</span> <span class="n">first</span> <span class="n">element</span> <span class="k">with</span> <span class="n">specific</span> <span class="k">class</span> <span class="err">*/</span>
 <span class="n">document</span><span class="o">.</span><span class="n">querySelector</span><span class="p">(</span><span class="s2">".special"</span><span class="p">)</span><span class="o">.</span><span class="n">innerText</span> <span class="o">=</span>
   <span class="s2">"First special text changed!"</span><span class="p">;</span>
 <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
@@ -8013,27 +8015,43 @@ e) Select the first element with a specific class and change its text.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">React</span><span class="o">,</span><span class="w"> </span><span class="p">{</span> <span class="n">Component</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
-
-<span class="k">class</span><span class="w"> </span><span class="nc">City</span> <span class="n">extends</span> <span class="n">Component</span> <span class="p">{</span>
-  <span class="n">constructor</span><span class="p">()</span> <span class="p">{</span>          <span class="o">//</span> <span class="n">mounting</span>
-    <span class="nb">super</span><span class="p">();</span>
-    <span class="n">this</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="p">{</span> <span class="n">city</span><span class="p">:</span> <span class="s2">"Mysore"</span> <span class="p">};</span>
-  <span class="p">}</span>
-
-  <span class="n">componentDidMount</span><span class="p">()</span> <span class="p">{</span>    <span class="o">//</span> <span class="n">after</span> <span class="n">mount</span>
-    <span class="n">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="n">this</span><span class="o">.</span><span class="n">setState</span><span class="p">({</span> <span class="n">city</span><span class="p">:</span> <span class="s2">"Bangalore"</span> <span class="p">}),</span> <span class="mi">2000</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="n">componentDidUpdate</span><span class="p">()</span> <span class="p">{</span>   <span class="o">//</span> <span class="n">runs</span> <span class="n">after</span> <span class="n">update</span>
-    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Updated:"</span><span class="p">,</span> <span class="n">this</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">city</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="n">render</span><span class="p">()</span> <span class="p">{</span>               <span class="o">//</span> <span class="n">mounting</span> <span class="o">+</span> <span class="n">updating</span>
-    <span class="k">return</span> <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">City</span><span class="p">:</span> <span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">city</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">React</span><span class="o">,</span><span class="p">{</span> <span class="n">Component</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="k">class</span> <span class="nc">City</span> <span class="n">extends</span> <span class="n">Component</span> <span class="p">{</span> 
+    <span class="n">constructor</span><span class="p">(</span><span class="n">props</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="nb">super</span><span class="p">(</span><span class="n">props</span><span class="p">);</span> 
+        <span class="n">this</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="p">{</span> <span class="n">city</span><span class="p">:</span> <span class="s2">"Mysore"</span> <span class="p">};</span> 
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Constructor :City initialized"</span><span class="p">);</span> 
+    <span class="p">}</span> 
+    <span class="n">static</span> <span class="n">getDerivedStateFromProps</span><span class="p">(</span><span class="n">props</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"getDerivedStateFromProps :Sync state with props if needed"</span><span class="p">);</span> 
+        <span class="k">return</span> <span class="n">null</span><span class="p">;</span> 
+    <span class="p">}</span> 
+    <span class="n">componentDidMount</span><span class="p">()</span> <span class="p">{</span> 
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"componentDidMount :Component is mounted"</span><span class="p">);</span> 
+        <span class="n">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+            <span class="n">this</span><span class="o">.</span><span class="n">setState</span><span class="p">({</span> <span class="n">city</span><span class="p">:</span> <span class="s2">"Bangalore"</span> <span class="p">});</span> 
+        <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span> 
+    <span class="p">}</span> 
+    <span class="n">shouldComponentUpdate</span><span class="p">(</span><span class="n">nextProps</span><span class="p">,</span> <span class="n">nextState</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"shouldComponentUpdate :Component should update"</span><span class="p">);</span> 
+        <span class="k">return</span> <span class="n">true</span><span class="p">;</span> 
+    <span class="p">}</span> 
+    <span class="n">getSnapshotBeforeUpdate</span><span class="p">(</span><span class="n">prevProps</span><span class="p">,</span> <span class="n">prevState</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"getSnapshotBeforeUpdate:Before DOM is updated"</span><span class="p">);</span> 
+        <span class="k">return</span> <span class="n">null</span><span class="p">;</span> 
+    <span class="p">}</span> 
+    <span class="n">componentDidUpdate</span><span class="p">(</span><span class="n">prevProps</span><span class="p">,</span> <span class="n">prevState</span><span class="p">,</span> <span class="n">snapshot</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"componentDidUpdate:The component is updated"</span><span class="p">);</span> 
+    <span class="p">}</span> 
+    <span class="n">render</span><span class="p">()</span> <span class="p">{</span> 
+        <span class="k">return</span> <span class="p">(</span> 
+            <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> 
+                <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Life</span> <span class="n">Cycle</span> <span class="n">Methods</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span> 
+                <span class="o">&lt;</span><span class="n">h3</span><span class="o">&gt;</span><span class="n">City</span><span class="p">:</span> <span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">city</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h3</span><span class="o">&gt;</span> 
+            <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span> 
+        <span class="p">);</span> 
+    <span class="p">}</span> 
+<span class="p">}</span> 
 <span class="n">export</span> <span class="n">default</span> <span class="n">City</span><span class="p">;</span>
 </pre></div>
 </div>
@@ -8062,17 +8080,21 @@ e) Select the first element with a specific class and change its text.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">ErrorBoundary</span><span class="o">.</span><span class="n">jsx</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">React</span><span class="o">,</span><span class="w"> </span><span class="p">{</span> <span class="n">Component</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">ErrorBoundary</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span><span class="o">,</span> <span class="p">{</span> <span class="n">Component</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">ErrorBoundary</span> <span class="n">extends</span> <span class="n">Component</span> <span class="p">{</span>
-  <span class="n">constructor</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nb">super</span><span class="p">();</span>
+<span class="k">class</span> <span class="nc">ErrorBoundary</span> <span class="n">extends</span> <span class="n">Component</span> <span class="p">{</span>
+  <span class="n">constructor</span><span class="p">(</span><span class="n">props</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">super</span><span class="p">(</span><span class="n">props</span><span class="p">);</span>
     <span class="n">this</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="p">{</span> <span class="n">hasError</span><span class="p">:</span> <span class="n">false</span> <span class="p">};</span>
   <span class="p">}</span>
 
-  <span class="n">componentDidCatch</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">this</span><span class="o">.</span><span class="n">setState</span><span class="p">({</span> <span class="n">hasError</span><span class="p">:</span> <span class="n">true</span> <span class="p">});</span>
+  <span class="n">static</span> <span class="n">getDerivedStateFromError</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span> <span class="n">hasError</span><span class="p">:</span> <span class="n">true</span> <span class="p">};</span>
+  <span class="p">}</span>
+
+  <span class="n">componentDidCatch</span><span class="p">(</span><span class="n">error</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Error caught:"</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
   <span class="p">}</span>
 
   <span class="n">render</span><span class="p">()</span> <span class="p">{</span>
@@ -8096,8 +8118,8 @@ e) Select the first element with a specific class and change its text.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">Division</span><span class="o">.</span><span class="n">jsx</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">React</span> <span class="kn">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">Division</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span>
 
 <span class="n">function</span> <span class="n">Division</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">const</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -8117,8 +8139,8 @@ e) Select the first element with a specific class and change its text.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">ArrayError</span><span class="o">.</span><span class="n">jsx</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">React</span> <span class="kn">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">ArrayError</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span>
 
 <span class="n">function</span> <span class="n">ArrayError</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">const</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
@@ -8154,7 +8176,7 @@ heading using a state variable (utilizing useState&amp;useEffect).</li>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">useState</span><span class="p">,</span> <span class="n">useEffect</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="p">{</span> <span class="n">useState</span><span class="p">,</span> <span class="n">useEffect</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span>
 
 <span class="n">function</span> <span class="n">Age</span><span class="p">({</span> <span class="n">age</span> <span class="p">})</span> <span class="p">{</span>
   <span class="n">const</span> <span class="p">[</span><span class="n">newAge</span><span class="p">,</span> <span class="n">setNewAge</span><span class="p">]</span> <span class="o">=</span> <span class="n">useState</span><span class="p">(</span><span class="n">age</span><span class="p">);</span>
@@ -8229,7 +8251,7 @@ heading using a state variable (utilizing useState&amp;useEffect).</li>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">useState</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="p">{</span> <span class="n">useState</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span>
 
 <span class="n">function</span> <span class="n">Counter</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">const</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span> <span class="n">setC</span><span class="p">]</span> <span class="o">=</span> <span class="n">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -8611,6 +8633,670 @@ heading using a state variable (utilizing useState&amp;useEffect).</li>
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2f76a10a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="21.-Build-a-React-application-using-React-Router-with-the-following-pages:">21. Build a React application using React Router with the following pages:<a class="anchor-link" href="#21.-Build-a-React-application-using-React-Router-with-the-following-pages:">¶</a></h4><p>• Dashboard – shows a list of tasks.<br/>
+• Task Details – dynamic route showing task info using /task/:taskId.<br/>
+• Settings – contains user preferences.
+Add a navigation menu and show a “Page Not Found” screen for invalid routes</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9a0efb5c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">index</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="nn">ReactDOM</span> <span class="kn">from</span> <span class="s2">"react-dom/client"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="p">{</span> <span class="n">BrowserRouter</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react-router-dom"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="nn">App</span> <span class="kn">from</span> <span class="s2">"./App"</span><span class="p">;</span> 
+<span class="n">const</span> <span class="n">root</span> <span class="o">=</span> <span class="n">ReactDOM</span><span class="o">.</span><span class="n">createRoot</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"root"</span><span class="p">));</span> 
+<span class="n">root</span><span class="o">.</span><span class="n">render</span><span class="p">(</span> 
+  <span class="o">&lt;</span><span class="n">BrowserRouter</span><span class="o">&gt;</span> 
+    <span class="o">&lt;</span><span class="n">App</span> <span class="o">/&gt;</span> 
+  <span class="o">&lt;/</span><span class="n">BrowserRouter</span><span class="o">&gt;</span> 
+<span class="p">);</span>
+
+<span class="o">//</span> <span class="n">If</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">start</span> <span class="n">measuring</span> <span class="n">performance</span> <span class="ow">in</span> <span class="n">your</span> <span class="n">app</span><span class="p">,</span> <span class="k">pass</span> <span class="n">a</span> <span class="n">function</span>
+<span class="o">//</span> <span class="n">to</span> <span class="n">log</span> <span class="n">results</span> <span class="p">(</span><span class="k">for</span> <span class="n">example</span><span class="p">:</span> <span class="n">reportWebVitals</span><span class="p">(</span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">))</span>
+<span class="o">//</span> <span class="ow">or</span> <span class="n">send</span> <span class="n">to</span> <span class="n">an</span> <span class="n">analytics</span> <span class="n">endpoint</span><span class="o">.</span> <span class="n">Learn</span> <span class="n">more</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">bit</span><span class="o">.</span><span class="n">ly</span><span class="o">/</span><span class="n">CRA</span><span class="o">-</span><span class="n">vitals</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dfb1b26f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">App</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="p">{</span> <span class="n">Routes</span><span class="p">,</span> <span class="n">Route</span><span class="p">,</span> <span class="n">Link</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react-router-dom"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="nn">Dashboard</span> <span class="kn">from</span> <span class="s2">"./pages/Dashboard"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="nn">TaskDetails</span> <span class="kn">from</span> <span class="s2">"./pages/TaskDetails"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="nn">Settings</span> <span class="kn">from</span> <span class="s2">"./pages/Settings"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="nn">NotFound</span> <span class="kn">from</span> <span class="s2">"./pages/NotFound"</span><span class="p">;</span> 
+<span class="n">function</span> <span class="n">App</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="k">return</span> <span class="p">(</span> 
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> 
+      <span class="p">{</span><span class="o">/*</span> <span class="n">Simple</span> <span class="n">Navbar</span> <span class="o">*/</span><span class="p">}</span> 
+      <span class="o">&lt;</span><span class="n">nav</span><span class="o">&gt;</span> 
+        <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="s2">"/"</span><span class="o">&gt;</span><span class="n">Dashboard</span><span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span> <span class="o">|</span><span class="p">{</span><span class="s2">" "</span><span class="p">}</span> 
+        <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="s2">"/settings"</span><span class="o">&gt;</span><span class="n">Settings</span><span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span> 
+      <span class="o">&lt;/</span><span class="n">nav</span><span class="o">&gt;</span> 
+      <span class="p">{</span><span class="o">/*</span> <span class="n">Routes</span> <span class="o">*/</span><span class="p">}</span> 
+      <span class="o">&lt;</span><span class="n">Routes</span><span class="o">&gt;</span> 
+        <span class="o">&lt;</span><span class="n">Route</span> <span class="n">path</span><span class="o">=</span><span class="s2">"/"</span> <span class="n">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="n">Dashboard</span> <span class="o">/&gt;</span><span class="p">}</span> <span class="o">/&gt;</span> 
+        <span class="o">&lt;</span><span class="n">Route</span> <span class="n">path</span><span class="o">=</span><span class="s2">"/task/:taskId"</span> <span class="n">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="n">TaskDetails</span> <span class="o">/&gt;</span><span class="p">}</span> <span class="o">/&gt;</span> 
+        <span class="o">&lt;</span><span class="n">Route</span> <span class="n">path</span><span class="o">=</span><span class="s2">"/settings"</span> <span class="n">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="n">Settings</span> <span class="o">/&gt;</span><span class="p">}</span> <span class="o">/&gt;</span> 
+        <span class="o">&lt;</span><span class="n">Route</span> <span class="n">path</span><span class="o">=</span><span class="s2">"*"</span> <span class="n">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="n">NotFound</span> <span class="o">/&gt;</span><span class="p">}</span> <span class="o">/&gt;</span> 
+      <span class="o">&lt;/</span><span class="n">Routes</span><span class="o">&gt;</span> 
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span> 
+  <span class="p">);</span> 
+<span class="p">}</span> 
+<span class="n">export</span> <span class="n">default</span> <span class="n">App</span><span class="p">;</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9e316fb2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">pages</span><span class="o">/</span><span class="n">Dashboard</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="p">{</span> <span class="n">Link</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react-router-dom"</span><span class="p">;</span> 
+ 
+<span class="n">const</span> <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span> 
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="s2">"Learn React Router"</span> <span class="p">},</span> 
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="s2">"Build a Dashboard"</span> <span class="p">},</span> 
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="s2">"Add Settings Page"</span> <span class="p">}</span> 
+<span class="p">];</span> 
+<span class="n">function</span> <span class="n">Dashboard</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="k">return</span> <span class="p">(</span> 
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Dashboard</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span> 
+        <span class="p">{</span><span class="n">tasks</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">task</span> <span class="o">=&gt;</span> <span class="p">(</span> 
+          <span class="o">&lt;</span><span class="n">li</span> <span class="n">key</span><span class="o">=</span><span class="p">{</span><span class="n">task</span><span class="o">.</span><span class="n">id</span><span class="p">}</span><span class="o">&gt;</span> 
+            <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="p">{</span><span class="s2">"/task/"</span> <span class="o">+</span> <span class="n">task</span><span class="o">.</span><span class="n">id</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="n">task</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span> 
+          <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span> 
+        <span class="p">))}</span> 
+      <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span> 
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span> 
+  <span class="p">);</span> 
+<span class="p">}</span> 
+<span class="n">export</span> <span class="n">default</span> <span class="n">Dashboard</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=31bdf551">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">pages</span><span class="o">/</span><span class="n">TaskDetails</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="kn">import</span> <span class="p">{</span> <span class="n">useParams</span> <span class="p">}</span> <span class="kn">from</span> <span class="s2">"react-router-dom"</span><span class="p">;</span> 
+<span class="n">const</span> <span class="n">tasks</span> <span class="o">=</span> <span class="p">{</span> 
+  <span class="mi">1</span><span class="p">:</span> <span class="p">{</span> <span class="n">title</span><span class="p">:</span> <span class="s2">"Learn React Router"</span><span class="p">,</span> <span class="n">description</span><span class="p">:</span> <span class="s2">"Understand routing basics."</span> <span class="p">},</span> 
+  <span class="mi">2</span><span class="p">:</span> <span class="p">{</span> <span class="n">title</span><span class="p">:</span> <span class="s2">"Build a Dashboard"</span><span class="p">,</span> <span class="n">description</span><span class="p">:</span> <span class="s2">"Create a task list view."</span> <span class="p">},</span> 
+  <span class="mi">3</span><span class="p">:</span> <span class="p">{</span> <span class="n">title</span><span class="p">:</span> <span class="s2">"Add Settings Page"</span><span class="p">,</span> <span class="n">description</span><span class="p">:</span> <span class="s2">"Allow user preferences."</span> <span class="p">}</span> 
+<span class="p">};</span> 
+<span class="n">function</span> <span class="n">TaskDetails</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="n">const</span> <span class="p">{</span> <span class="n">taskId</span> <span class="p">}</span> <span class="o">=</span> <span class="n">useParams</span><span class="p">();</span> 
+  <span class="n">const</span> <span class="n">task</span> <span class="o">=</span> <span class="n">tasks</span><span class="p">[</span><span class="n">taskId</span><span class="p">];</span> 
+  <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">task</span><span class="p">)</span> <span class="k">return</span> <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Task</span> <span class="ow">not</span> <span class="n">found</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span><span class="p">;</span> 
+  <span class="k">return</span> <span class="p">(</span> 
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="n">task</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{</span><span class="n">task</span><span class="o">.</span><span class="n">description</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span> 
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span> 
+  <span class="p">);</span> 
+<span class="p">}</span> 
+<span class="n">export</span> <span class="n">default</span> <span class="n">TaskDetails</span><span class="p">;</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c5f66ff8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">pages</span><span class="o">/</span><span class="n">Settings</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="n">function</span> <span class="n">Settings</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="k">return</span> <span class="p">(</span> 
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Settings</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">User</span> <span class="n">preferences</span> <span class="n">go</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span> 
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span> 
+  <span class="p">);</span> 
+<span class="p">}</span> 
+<span class="n">export</span> <span class="n">default</span> <span class="n">Settings</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a48d7550">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">pages</span><span class="o">/</span><span class="n">NotFound</span><span class="o">.</span><span class="n">js</span>
+<span class="kn">import</span> <span class="nn">React</span> <span class="kn">from</span> <span class="s2">"react"</span><span class="p">;</span> 
+<span class="n">function</span> <span class="n">NotFound</span><span class="p">()</span> <span class="p">{</span> 
+  <span class="k">return</span> <span class="p">(</span> 
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="mi">404</span> <span class="o">-</span> <span class="n">Page</span> <span class="n">Not</span> <span class="n">Found</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span> 
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span> 
+  <span class="p">);</span> 
+<span class="p">}</span> 
+<span class="n">export</span> <span class="n">default</span> <span class="n">NotFound</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0303c9e0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="22.-Design-a-registration-form-containing:">22. Design a registration form containing:<a class="anchor-link" href="#22.-Design-a-registration-form-containing:">¶</a></h4><ol>
+<li>Username</li>
+<li>Email</li>
+<li>Mobile Number</li>
+<li>Password</li>
+<li>Confirm Password</li>
+<li>Branch Selection (dropdown)</li>
+<li>Upload Profile Picture</li>
+<li>Register and Reset buttons</li>
+</ol>
+<p>Write a JavaScript program that validates:<br/>
+i. Username must be at least 6 characters.<br/>
+ii. Email must follow correct format.<br/>
+iii. Mobile number must contain exactly 10 digits.<br/>
+iv. Password must include letters and numbers.<br/>
+v. Confirm Password must match.<br/>
+vi. Error messages should appear next to each field.<br/>
+vii. After successful validation, display the user details in a formatted card using DOM elements.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c9900ff1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="err">!</span><span class="n">DOCTYPE</span> <span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Registration</span> <span class="n">Form</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+    <span class="n">span</span><span class="p">{</span><span class="n">color</span><span class="p">:</span><span class="n">red</span><span class="p">;</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span><span class="mi">12</span><span class="n">px</span><span class="p">}</span>
+    <span class="o">.</span><span class="n">card</span><span class="p">{</span><span class="n">border</span><span class="p">:</span><span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#000;padding:10px;margin-top:10px;width:250px}</span>
+  <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">h3</span><span class="o">&gt;</span><span class="n">Registration</span> <span class="n">Form</span><span class="o">&lt;/</span><span class="n">h3</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">form</span> <span class="n">onsubmit</span><span class="o">=</span><span class="s2">"return validate()"</span><span class="o">&gt;</span>
+
+<span class="n">Username</span>  
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"u"</span><span class="o">&gt;&lt;</span><span class="n">span</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"eu"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Email</span>  
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"e"</span><span class="o">&gt;&lt;</span><span class="n">span</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"ee"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Mobile</span> <span class="n">Number</span>  
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"m"</span><span class="o">&gt;&lt;</span><span class="n">span</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"em"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Password</span>  
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"password"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"p"</span><span class="o">&gt;&lt;</span><span class="n">span</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"ep"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Confirm</span> <span class="n">Password</span>  
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"password"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"cp"</span><span class="o">&gt;&lt;</span><span class="n">span</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"ecp"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Branch</span>  
+<span class="o">&lt;</span><span class="n">select</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"b"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="n">CSE</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="n">ISE</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="n">ECE</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Upload</span> <span class="n">Profile</span> <span class="n">Picture</span>  
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"file"</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"submit"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"reset"</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"out"</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">function</span> <span class="n">validate</span><span class="p">(){</span>
+  <span class="n">let</span> <span class="n">u</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"u"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+  <span class="n">let</span> <span class="n">e</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"e"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+  <span class="n">let</span> <span class="n">m</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"m"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+  <span class="n">let</span> <span class="n">p</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"p"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+  <span class="n">let</span> <span class="n">cp</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"cp"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+
+  <span class="n">let</span> <span class="n">eu</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"eu"</span><span class="p">);</span>
+  <span class="n">let</span> <span class="n">ee</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"ee"</span><span class="p">);</span>
+  <span class="n">let</span> <span class="n">em</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"em"</span><span class="p">);</span>
+  <span class="n">let</span> <span class="n">ep</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"ep"</span><span class="p">);</span>
+  <span class="n">let</span> <span class="n">ecp</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"ecp"</span><span class="p">);</span>
+
+  <span class="n">eu</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">length</span><span class="o">&lt;</span><span class="mi">6</span> <span class="err">?</span> <span class="s2">" minimum 6 characters"</span> <span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="n">ee</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="err">!</span><span class="o">/^</span>\<span class="n">S</span><span class="o">+@</span>\<span class="n">S</span><span class="o">+</span>\<span class="o">.</span>\<span class="n">S</span><span class="o">+</span><span class="err">$</span><span class="o">/.</span><span class="n">test</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="err">?</span> <span class="s2">" invalid email format"</span> <span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="n">em</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="err">!</span><span class="o">/^</span>\<span class="n">d</span><span class="p">{</span><span class="mi">10</span><span class="p">}</span><span class="err">$</span><span class="o">/.</span><span class="n">test</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="err">?</span> <span class="s2">" exactly 10 digits"</span> <span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="n">ep</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="err">!</span><span class="p">(</span><span class="o">/</span><span class="p">[</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z</span><span class="p">]</span><span class="o">/.</span><span class="n">test</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">&amp;&amp;/</span>\<span class="n">d</span><span class="o">/.</span><span class="n">test</span><span class="p">(</span><span class="n">p</span><span class="p">))</span> <span class="err">?</span> <span class="s2">" letters and numbers required"</span> <span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="n">ecp</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">p</span><span class="o">!==</span><span class="n">cp</span> <span class="err">?</span> <span class="s2">" passwords do not match"</span> <span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+
+  <span class="k">if</span><span class="p">(</span><span class="n">eu</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">||</span><span class="n">ee</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">||</span><span class="n">em</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">||</span><span class="n">ep</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">||</span><span class="n">ecp</span><span class="o">.</span><span class="n">innerHTML</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">false</span><span class="p">;</span>
+
+  <span class="n">out</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span>
+  <span class="s2">"&lt;div class='card'&gt;&lt;b&gt;"</span> <span class="o">+</span> <span class="n">u</span> <span class="o">+</span> <span class="s2">"&lt;/b&gt;&lt;br&gt;"</span> <span class="o">+</span> <span class="n">e</span> <span class="o">+</span> <span class="s2">"&lt;br&gt;"</span> <span class="o">+</span> <span class="n">m</span> <span class="o">+</span> <span class="s2">"&lt;br&gt;Branch: "</span> <span class="o">+</span> <span class="n">b</span><span class="o">.</span><span class="n">value</span> <span class="o">+</span> <span class="s2">"&lt;/div&gt;"</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="n">false</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b7021bd9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="23.-Build-a-webpage-that-handles-events:-onclick,-onmouseover,-onkeyup,-onfocus.">23. Build a webpage that handles events: onclick, onmouseover, onkeyup, onfocus.<a class="anchor-link" href="#23.-Build-a-webpage-that-handles-events:-onclick,-onmouseover,-onkeyup,-onfocus.">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6765bf9e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="err">!</span><span class="n">DOCTYPE</span> <span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Event</span> <span class="n">Handling</span> <span class="n">Demo</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Event</span> <span class="n">Handling</span> <span class="n">Demonstration</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"clickEvent()"</span><span class="o">&gt;</span><span class="n">Click</span> <span class="n">Me</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"box"</span>
+     <span class="n">onmouseover</span><span class="o">=</span><span class="s2">"hoverIn()"</span>
+     <span class="n">onmouseout</span><span class="o">=</span><span class="s2">"hoverOut()"</span>
+     <span class="n">style</span><span class="o">=</span><span class="s2">"width:180px;height:60px;border:1px solid black;text-align:center;"</span><span class="o">&gt;</span>
+  <span class="n">Hover</span> <span class="n">Over</span> <span class="n">This</span> <span class="n">Box</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Type</span> <span class="n">Something</span><span class="p">:</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"key"</span> <span class="n">onkeyup</span><span class="o">=</span><span class="s2">"keyUp()"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"keyMsg"</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
+<span class="n">Focus</span> <span class="n">on</span> <span class="n">this</span> <span class="n">Input</span><span class="p">:</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">input</span> <span class="n">onfocus</span><span class="o">=</span><span class="s2">"focusIn()"</span> <span class="n">onblur</span><span class="o">=</span><span class="s2">"focusOut()"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"focusMsg"</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">function</span> <span class="n">clickEvent</span><span class="p">(){</span> <span class="n">alert</span><span class="p">(</span><span class="s2">"Button Clicked!"</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="n">function</span> <span class="n">hoverIn</span><span class="p">(){</span> <span class="n">box</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">background</span><span class="o">=</span><span class="s2">"#e0e0e0"</span><span class="p">;</span> <span class="p">}</span>
+<span class="n">function</span> <span class="n">hoverOut</span><span class="p">(){</span> <span class="n">box</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">background</span><span class="o">=</span><span class="s2">"white"</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="n">function</span> <span class="n">keyUp</span><span class="p">(){</span> <span class="n">keyMsg</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">=</span><span class="s2">"You typed: "</span><span class="o">+</span><span class="n">key</span><span class="o">.</span><span class="n">value</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="n">function</span> <span class="n">focusIn</span><span class="p">(){</span> <span class="n">focusMsg</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">=</span><span class="s2">"Input is focused"</span><span class="p">;</span> <span class="p">}</span>
+<span class="n">function</span> <span class="n">focusOut</span><span class="p">(){</span> <span class="n">focusMsg</span><span class="o">.</span><span class="n">innerHTML</span><span class="o">=</span><span class="s2">""</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5ff85565">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="24.-Develop-an-Express.js-API-for-Teacher-Records-that-performs-CRUD-operations:">24. Develop an Express.js API for Teacher Records that performs CRUD operations:<a class="anchor-link" href="#24.-Develop-an-Express.js-API-for-Teacher-Records-that-performs-CRUD-operations:">¶</a></h4><p>i. Add routes to create, fetch all, fetch by ID, update, and delete teacher details.<br/>
+ii. Ensure JSON data is parsed using middleware and invalid requests return error messages.<br/>
+iii. Include fields: name, department, experience, and email.<br/>
+iv. Return meaningful success messages for each action.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b765198f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">const</span> <span class="n">express</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">app</span> <span class="o">=</span> <span class="n">express</span><span class="p">();</span>
+<span class="n">app</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">express</span><span class="o">.</span><span class="n">json</span><span class="p">());</span>
+
+<span class="n">let</span> <span class="n">teachers</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span><span class="nb">id</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="n">name</span><span class="p">:</span><span class="s2">"Alice"</span><span class="p">,</span><span class="n">department</span><span class="p">:</span><span class="s2">"CSE"</span><span class="p">,</span><span class="n">experience</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="n">email</span><span class="p">:</span><span class="s2">"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9d8d5d0dadcf9d4d8d0d597dad6d4">[email&#160;protected]</a>"</span><span class="p">},</span>
+  <span class="p">{</span><span class="nb">id</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">name</span><span class="p">:</span><span class="s2">"Bob"</span><span class="p">,</span><span class="n">department</span><span class="p">:</span><span class="s2">"ECE"</span><span class="p">,</span><span class="n">experience</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="n">email</span><span class="p">:</span><span class="s2">"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e1c111c3e131f1712501d1113">[email&#160;protected]</a>"</span><span class="p">},</span>
+  <span class="p">{</span><span class="nb">id</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="n">name</span><span class="p">:</span><span class="s2">"Charlie"</span><span class="p">,</span><span class="n">department</span><span class="p">:</span><span class="s2">"ME"</span><span class="p">,</span><span class="n">experience</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">email</span><span class="p">:</span><span class="s2">"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a4c7ccc5d6c8cdc1e4c9c5cdc88ac7cbc9">[email&#160;protected]</a>"</span><span class="p">}</span>
+<span class="p">];</span>
+
+<span class="n">let</span> <span class="n">nextId</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+
+<span class="n">const</span> <span class="n">valid</span> <span class="o">=</span> <span class="p">({</span><span class="n">name</span><span class="p">,</span><span class="n">department</span><span class="p">,</span><span class="n">experience</span><span class="p">,</span><span class="n">email</span><span class="p">})</span> <span class="o">=&gt;</span>
+  <span class="n">name</span> <span class="o">&amp;&amp;</span> <span class="n">department</span> <span class="o">&amp;&amp;</span> <span class="n">experience</span> <span class="o">&amp;&amp;</span> <span class="n">email</span><span class="p">;</span>
+
+<span class="o">//</span> <span class="n">CREATE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">'/teachers'</span><span class="p">,(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">valid</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">body</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"All fields required"</span><span class="p">});</span>
+
+  <span class="n">const</span> <span class="n">t</span> <span class="o">=</span> <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="n">nextId</span><span class="o">++</span><span class="p">,</span> <span class="o">...</span><span class="n">req</span><span class="o">.</span><span class="n">body</span> <span class="p">};</span>
+  <span class="n">teachers</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">201</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teacher created"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">t</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">READ</span> <span class="n">ALL</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'/teachers'</span><span class="p">,(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teachers fetched"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">teachers</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">READ</span> <span class="n">BY</span> <span class="n">ID</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'/teachers/:id'</span><span class="p">,(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">t</span> <span class="o">=</span> <span class="n">teachers</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="o">=&gt;</span><span class="n">x</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">id</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teacher not found"</span><span class="p">});</span>
+
+  <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teacher fetched"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">t</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">UPDATE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'/teachers/:id'</span><span class="p">,(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">t</span> <span class="o">=</span> <span class="n">teachers</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="o">=&gt;</span><span class="n">x</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">id</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teacher not found"</span><span class="p">});</span>
+
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">valid</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">body</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"All fields required"</span><span class="p">});</span>
+
+  <span class="n">Object</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">req</span><span class="o">.</span><span class="n">body</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teacher updated"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">t</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">DELETE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s1">'/teachers/:id'</span><span class="p">,(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">i</span> <span class="o">=</span> <span class="n">teachers</span><span class="o">.</span><span class="n">findIndex</span><span class="p">(</span><span class="n">x</span><span class="o">=&gt;</span><span class="n">x</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">id</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Teacher not found"</span><span class="p">});</span>
+
+  <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span>
+    <span class="n">message</span><span class="p">:</span><span class="s2">"Teacher deleted"</span><span class="p">,</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">teachers</span><span class="o">.</span><span class="n">splice</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">INVALID</span> <span class="n">ROUTE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">use</span><span class="p">((</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Invalid route"</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,()</span><span class="o">=&gt;</span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Server running on port 3000"</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=605e7f4e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="25.Create-a-Course-Management-API-using-Node.js-and-MongoDB:">25.Create a Course Management API using Node.js and MongoDB:<a class="anchor-link" href="#25.Create-a-Course-Management-API-using-Node.js-and-MongoDB:">¶</a></h4><p>• Add routes to create, view, update, and delete course details.<br/>
+• Each course contains: courseName, faculty, credits, and studentsEnrolled.<br/>
+• Implement a separate route /courses/totalStudents to calculate total enrollment across all courses.<br/>
+• Use Mongoose validation for required fields.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8efe8217">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">const</span> <span class="n">express</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">mongoose</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">'mongoose'</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">app</span> <span class="o">=</span> <span class="n">express</span><span class="p">();</span>
+<span class="n">app</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">express</span><span class="o">.</span><span class="n">json</span><span class="p">());</span>
+
+<span class="o">//</span> <span class="n">MongoDB</span> <span class="n">connection</span>
+<span class="n">mongoose</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'mongodb://127.0.0.1:27017/CourseDB'</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">Schema</span>
+<span class="n">const</span> <span class="n">courseSchema</span> <span class="o">=</span> <span class="n">new</span> <span class="n">mongoose</span><span class="o">.</span><span class="n">Schema</span><span class="p">({</span>
+  <span class="n">courseName</span><span class="p">:</span> <span class="p">{</span> <span class="nb">type</span><span class="p">:</span><span class="n">String</span><span class="p">,</span> <span class="n">required</span><span class="p">:</span><span class="n">true</span> <span class="p">},</span>
+  <span class="n">faculty</span><span class="p">:</span> <span class="p">{</span> <span class="nb">type</span><span class="p">:</span><span class="n">String</span><span class="p">,</span> <span class="n">required</span><span class="p">:</span><span class="n">true</span> <span class="p">},</span>
+  <span class="n">credits</span><span class="p">:</span> <span class="p">{</span> <span class="nb">type</span><span class="p">:</span><span class="n">Number</span><span class="p">,</span> <span class="n">required</span><span class="p">:</span><span class="n">true</span> <span class="p">},</span>
+  <span class="n">studentsEnrolled</span><span class="p">:</span> <span class="p">{</span> <span class="nb">type</span><span class="p">:</span><span class="n">Number</span><span class="p">,</span> <span class="n">required</span><span class="p">:</span><span class="n">true</span> <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="n">const</span> <span class="n">Course</span> <span class="o">=</span> <span class="n">mongoose</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="s1">'Course'</span><span class="p">,</span> <span class="n">courseSchema</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">CREATE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">'/courses'</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="k">try</span><span class="p">{</span>
+    <span class="n">const</span> <span class="n">c</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Course</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">body</span><span class="p">);</span>
+    <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">201</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Course created"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">c</span><span class="p">});</span>
+  <span class="p">}</span><span class="n">catch</span><span class="p">(</span><span class="n">err</span><span class="p">){</span>
+    <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="n">err</span><span class="o">.</span><span class="n">message</span><span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">READ</span> <span class="n">ALL</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'/courses'</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">(</span><span class="k">await</span> <span class="n">Course</span><span class="o">.</span><span class="n">find</span><span class="p">());</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">READ</span> <span class="n">BY</span> <span class="n">ID</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'/courses/:id'</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">c</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Course</span><span class="o">.</span><span class="n">findById</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">id</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">c</span><span class="p">)</span> <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Course not found"</span><span class="p">});</span>
+  <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">UPDATE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">'/courses/:id'</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">c</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Course</span><span class="o">.</span><span class="n">findByIdAndUpdate</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">body</span><span class="p">,</span> <span class="p">{</span><span class="n">new</span><span class="p">:</span><span class="n">true</span><span class="p">,</span> <span class="n">runValidators</span><span class="p">:</span><span class="n">true</span><span class="p">});</span>
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">c</span><span class="p">)</span> <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Course not found"</span><span class="p">});</span>
+  <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Course updated"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">c</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">DELETE</span>
+<span class="n">app</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s1">'/courses/:id'</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">c</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Course</span><span class="o">.</span><span class="n">findByIdAndDelete</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">id</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">c</span><span class="p">)</span> <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Course not found"</span><span class="p">});</span>
+  <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">message</span><span class="p">:</span><span class="s2">"Course deleted"</span><span class="p">,</span><span class="n">data</span><span class="p">:</span><span class="n">c</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="o">//</span> <span class="n">TOTAL</span> <span class="n">STUDENTS</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'/courses/totalStudents'</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="n">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="n">const</span> <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Course</span><span class="o">.</span><span class="n">aggregate</span><span class="p">([</span>
+    <span class="p">{</span><span class="err">$</span><span class="n">group</span><span class="p">:{</span><span class="n">_id</span><span class="p">:</span><span class="n">null</span><span class="p">,</span><span class="n">total</span><span class="p">:{</span><span class="err">$</span><span class="nb">sum</span><span class="p">:</span><span class="s2">"$studentsEnrolled"</span><span class="p">}}}</span>
+  <span class="p">]);</span>
+  <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="n">totalStudents</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">?</span><span class="o">.</span><span class="n">total</span> <span class="o">||</span> <span class="mi">0</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,()</span><span class="o">=&gt;</span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Server running on port 3000"</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=267b4352">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="26.Develop-a-Node.js-program-using-the-MongoDB-native-driver-to-accomplish-the-following:">26.Develop a Node.js program using the MongoDB native driver to accomplish the following:<a class="anchor-link" href="#26.Develop-a-Node.js-program-using-the-MongoDB-native-driver-to-accomplish-the-following:">¶</a></h4><ol>
+<li>Read a list of employee records from a file named employees.json.</li>
+<li>Connect to a MongoDB database CompanyDB and insert the records into a collection called employees.</li>
+<li>Update the record of the employee with empId = 101 by changing the value of the designation field.</li>
+<li>Retrieve all employee records and write them into a file named updated_employees.json.</li>
+<li>Display a message confirming that the export process has been successfully completed.</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=559f822e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">employeeScript</span><span class="o">.</span><span class="n">js</span>
+<span class="n">const</span> <span class="n">fs</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s2">"fs"</span><span class="p">);</span>
+<span class="n">const</span> <span class="p">{</span> <span class="n">MongoClient</span> <span class="p">}</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s2">"mongodb"</span><span class="p">);</span>
+
+<span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"mongodb://localhost:27017"</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">client</span> <span class="o">=</span> <span class="n">new</span> <span class="n">MongoClient</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
+
+<span class="n">const</span> <span class="n">inputFile</span> <span class="o">=</span> <span class="s2">"employees.json"</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="s2">"updated_employees.json"</span><span class="p">;</span>
+
+<span class="o">//</span> <span class="n">Step</span> <span class="mi">1</span><span class="p">:</span> <span class="n">Read</span> <span class="n">file</span>
+<span class="n">const</span> <span class="n">employees</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">readFileSync</span><span class="p">(</span><span class="n">inputFile</span><span class="p">));</span>
+
+<span class="k">async</span> <span class="n">function</span> <span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">Step</span> <span class="mi">2</span><span class="p">:</span> <span class="n">Connect</span> <span class="n">to</span> <span class="n">DB</span>
+    <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">();</span>
+    <span class="n">const</span> <span class="n">db</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">db</span><span class="p">(</span><span class="s2">"CompanyDB"</span><span class="p">);</span>
+    <span class="n">const</span> <span class="n">col</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">collection</span><span class="p">(</span><span class="s2">"employees"</span><span class="p">);</span>
+
+    <span class="o">//</span> <span class="n">Insert</span> <span class="n">records</span>
+    <span class="k">await</span> <span class="n">col</span><span class="o">.</span><span class="n">insertMany</span><span class="p">(</span><span class="n">employees</span><span class="p">);</span>
+
+    <span class="o">//</span> <span class="n">Step</span> <span class="mi">3</span><span class="p">:</span> <span class="n">Update</span> <span class="n">empId</span> <span class="o">=</span> <span class="mi">101</span>
+    <span class="k">await</span> <span class="n">col</span><span class="o">.</span><span class="n">updateOne</span><span class="p">(</span>
+      <span class="p">{</span> <span class="n">empId</span><span class="p">:</span> <span class="mi">101</span> <span class="p">},</span>
+      <span class="p">{</span> <span class="err">$</span><span class="nb">set</span><span class="p">:</span> <span class="p">{</span> <span class="n">designation</span><span class="p">:</span> <span class="s2">"Senior Developer"</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="p">);</span>
+
+    <span class="o">//</span> <span class="n">Step</span> <span class="mi">4</span><span class="p">:</span> <span class="n">Fetch</span> <span class="nb">all</span> <span class="n">records</span>
+    <span class="n">const</span> <span class="n">updated</span> <span class="o">=</span> <span class="k">await</span> <span class="n">col</span><span class="o">.</span><span class="n">find</span><span class="p">()</span><span class="o">.</span><span class="n">toArray</span><span class="p">();</span>
+
+    <span class="o">//</span> <span class="n">Write</span> <span class="n">to</span> <span class="n">file</span>
+    <span class="n">fs</span><span class="o">.</span><span class="n">writeFileSync</span><span class="p">(</span><span class="n">outputFile</span><span class="p">,</span> <span class="n">JSON</span><span class="o">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">updated</span><span class="p">,</span> <span class="n">null</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span>
+
+    <span class="o">//</span> <span class="n">Step</span> <span class="mi">5</span><span class="p">:</span> <span class="n">Success</span> <span class="n">message</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Employee records exported successfully"</span><span class="p">);</span>
+
+  <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">close</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">run</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7baa3a9f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">employees</span><span class="o">.</span><span class="n">json</span>
+<span class="p">[</span>
+  <span class="p">{</span> <span class="s2">"empId"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Arun"</span><span class="p">,</span> <span class="s2">"designation"</span><span class="p">:</span> <span class="s2">"Developer"</span><span class="p">,</span> <span class="s2">"salary"</span><span class="p">:</span> <span class="mi">30000</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="s2">"empId"</span><span class="p">:</span> <span class="mi">101</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Priya"</span><span class="p">,</span> <span class="s2">"designation"</span><span class="p">:</span> <span class="s2">"Tester"</span><span class="p">,</span> <span class="s2">"salary"</span><span class="p">:</span> <span class="mi">28000</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="s2">"empId"</span><span class="p">:</span> <span class="mi">102</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Rahul"</span><span class="p">,</span> <span class="s2">"designation"</span><span class="p">:</span> <span class="s2">"Manager"</span><span class="p">,</span> <span class="s2">"salary"</span><span class="p">:</span> <span class="mi">45000</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </main>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
